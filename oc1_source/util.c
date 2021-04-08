@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 /****************************************************************/
 /* Copyright 1993, 1994                                         */
 /* Johns Hopkins University			                */

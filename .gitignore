@@ -174,3 +174,11 @@ fabric.properties
 *.eggs/
 venv/
 cython_debug/
+oc1_source/*.o
+oc1_source/display
+oc1_source/mktree
+oc1_source/gendata
+oc1_source/*.test
+oc1_source/*.train
+oc1_source/*.unl
+
