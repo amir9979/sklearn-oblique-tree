@@ -109,7 +109,9 @@ double min(a,n)
   xmin = a[1]; 
   for (i=2;i<=n;i++)
   { 
-	check = (a[i] < xmin);
+	check = a[i] < xmin;
+	if (check)
+	  xmin = a[i];
   }
   return(xmin);
 }
