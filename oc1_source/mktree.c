@@ -1435,7 +1435,8 @@ int no_of_points; {
   for (j = 1; j <= no_of_dimensions; j++) {
     for (i = 1; i <= no_of_points; i++) temp[i] = points[i] -> dimension[j];
 
-    attribute_min[j] = min(temp, no_of_points);
+    min(*temp, no_of_points);
+	attribute_min[j] = min(temp, no_of_points);
     if (attribute_min[j] < 0)
       for (i = 1; i <= no_of_points; i++)
         points[i] -> dimension[j] -= attribute_min[j];
