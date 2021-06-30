@@ -99,7 +99,7 @@ double myrandom(above,below)
 /*             n: length of the double array.                            */
 /************************************************************************/
 double average(a,n)
-     double a[];
+     double *a;
      int n;
 {
   double sum=0;
@@ -116,7 +116,7 @@ double average(a,n)
 /*             n: length of the double array.                            */
 /************************************************************************/
 double min(a,n)
-     double a[];
+     double *a;
      int n;
 {
   double xmin;
@@ -135,7 +135,7 @@ double min(a,n)
 /* Calls Modules: Average                                               */
 /************************************************************************/ 
 double sdev(a,n)
-     double a[];
+     double *a;
      int n;
 {
   int i;
@@ -215,7 +215,7 @@ double *dvector(nl,nh)
 /*          cases, however.                                             */
 /************************************************************************/
 free_ivector(v,nl,nh)
-     int v[],nl[],nh[];
+     int *v,nl,nh;
 {
   free((char*)(v+nl));
 }
@@ -231,7 +231,7 @@ free_ivector(v,nl,nh)
 /************************************************************************/
 free_vector(v,nl,nh)
      int nl,nh;
-     double v[];
+     double *v;
 {
   free((char*)(v+nl));
 }
