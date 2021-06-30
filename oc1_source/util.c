@@ -98,7 +98,7 @@ double myrandom(above,below)
 /* Parameters: a: double array, indices in the range 1,n                 */
 /*             n: length of the double array.                            */
 /************************************************************************/
-double min(a,n)
+double min2(a,n)
      double *a;
      int n;
 {

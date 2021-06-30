@@ -1428,14 +1428,14 @@ normalize_data(points, no_of_points)
 struct point ** points;
 int no_of_points; {
   int i, j;
-  double * temp, average(), sdev(), min();
+  double * temp, average(), sdev(), min2();
 
   temp = vector(1, no_of_points);
 
   for (j = 1; j <= no_of_dimensions; j++) {
     for (i = 1; i <= no_of_points; i++) temp[i] = points[i] -> dimension[j];
 
-    attribute_min[j] = min(temp, no_of_points);
+    attribute_min[j] = min2(temp, no_of_points);
     if (attribute_min[j] < 0)
       for (i = 1; i <= no_of_points; i++)
         points[i] -> dimension[j] -= attribute_min[j];
