@@ -93,25 +93,6 @@ double myrandom(above,below)
 
 
 /************************************************************************/
-/* Module name : Average                                                */
-/* Functionality : Computes the average of a double array.               */
-/* Parameters: a: double array, indices in the range 1,n                 */
-/*             n: length of the double array.                            */
-/************************************************************************/
-double average(a,n)
-     double *a;
-     int n;
-{
-  double sum=0;
-  int i;
-  
-  for (i=1; i<=n; i++) {
-	  sum += a[i];
-  }
-  return(sum/n);
-}
-
-/************************************************************************/
 /* Module name : Min                                                    */
 /* Functionality : Returns the minimum entry of a double array           */
 /* Parameters: a: double array, indices in the range 1,n                 */
@@ -131,6 +112,26 @@ double min(a,n)
 	  xmin = a[i];
   }
   return(xmin);
+}
+
+
+/************************************************************************/
+/* Module name : Average                                                */
+/* Functionality : Computes the average of a double array.               */
+/* Parameters: a: double array, indices in the range 1,n                 */
+/*             n: length of the double array.                            */
+/************************************************************************/
+double average(a,n)
+     double *a;
+     int n;
+{
+  double sum=0;
+  int i;
+  
+  for (i=1; i<=n; i++) {
+	  sum += a[i];
+  }
+  return(sum/n);
 }
 
 /************************************************************************/
