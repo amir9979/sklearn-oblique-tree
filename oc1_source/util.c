@@ -106,11 +106,7 @@ double min(a,n)
   int i;
   int check;
   
-  xmin = a[1]; 
-  for (i=2;i<=n;i++)
-  { 
-	check = (a[i] < xmin);
-  }
+  xmin = a[1];
   return(xmin);
 }
 
