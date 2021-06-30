@@ -1,5 +1,5 @@
 C       = /usr/bin/gcc
-CFLAGS  = -O0 -g
+CFLAGS  = -w -Wno-return-type -fcommon
 LIBS    = -lm
 
 SRC     = util.c tree_util.c load_data.c perturb.c \
