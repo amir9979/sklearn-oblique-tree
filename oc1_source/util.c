@@ -105,7 +105,9 @@ double average(a,n)
   double sum=0;
   int i;
   
-  for (i=1;i<=n;i++) sum += a[i];
+  for (i=1; i<=n; i++) {
+	  sum += a[i];
+  }
   return(sum/n);
 }
 
