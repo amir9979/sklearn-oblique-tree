@@ -23,8 +23,8 @@ extensions = [
                                                        # "oc1_source/classify_util.c",
                                                         "oc1_source/tree_util.c"
                                                         ],
-               include_dirs=[numpy.get_include(), '.'],
-               extra_compile_args=["-w"]
+               include_dirs=[numpy.get_include(), '.']
+               #extra_compile_args=["-w"]
 
      )
     ]
