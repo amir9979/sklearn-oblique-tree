@@ -123,7 +123,7 @@ double min(a,n)
   int i;
   
   xmin = a[1]; 
-  for (i=2;i<=n;i++) if (a[i] < xmin) xmin = a[i];
+  for (i=2;i<=n;i++){ if (a[i] < xmin) xmin = a[i]};
   return(xmin);
 }
 
